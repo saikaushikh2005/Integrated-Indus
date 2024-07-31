@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #c70000;
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+    background-color: #1e1e1e;
+    overflow-y: auto;
+    margin-top: 60px;
+    color: #e0e0e0;
+}
+
+.headerde {
+    background: linear-gradient(270deg,#50026f,#0c0000);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 8px;
+}
+
+.headerde h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.deadlines-section {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.deadlines-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.deadline-item {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.deadline-item.completed {
+    background-color: #1e1e1e;
+    color: #a0a0a0;
+    text-decoration: line-through;
+}
+
+.deadline-task {
+    flex: 1;
+}
+
+.deadline-date {
+    display: block;
+    font-size: 1em;
+    color: #c70000;
+}
+
+.mark-complete-btn {
+    background: linear-gradient(90deg, #4caf50, #45a049);
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px; /* Increased padding */
+    font-size: 0.8em; /* Reduced font size */
+    border-radius: 8px; /* Increased border radius */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 160px; /* Increased width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+}
+
+.mark-complete-btn:hover {
+    background: linear-gradient(90deg, #45a049, #4caf50);
+    transform: translateY(-2px); /* Slightly lifts the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.mark-complete-btn:active {
+    transform: translateY(0); /* Button returns to original position */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow returns to original */
+}
+
+.status {
+    font-size: 1.2em; /* Increased font size */
+    color: #4caf50;
+}

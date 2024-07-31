@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.leave-approval-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #16213e;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar img {
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.leave-main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 20px;
+    background: linear-gradient(0deg,#50026f, #000,#0c0000);
+}
+
+.headd {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    background: linear-gradient(270deg,#50026f,#0c0000);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 60px;
+}
+
+.leave-requests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 15%;
+}
+
+.leave-request {
+    background: linear-gradient(60deg, #000, #50026f, #0c0000);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.request-details {
+    margin-bottom: 10px;
+}
+
+.request-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.accept-button,
+.delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+}
+
+.accept-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .leave-request {
+        flex: 1 1 calc(50% - 32px);
+    }
+}
+
+@media (max-width: 480px) {
+    .leave-request {
+        flex: 1 1 100%;
+    }
+}

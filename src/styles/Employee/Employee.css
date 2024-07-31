@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(0deg,#50026f, #000,#0c0000);
+    font-family: Arial, Helvetica, sans-serif; /* Professional and readable font */
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg,#50026f, #000,#0c0000);
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    border-radius: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #c70000;
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+    background: linear-gradient(0deg,   #50026f, #000,#0c0000);
+    overflow-y: auto;
+    height: 100vh;
+    color: #e0e0e0;
+}
+
+.headeremp {
+    background: linear-gradient(270deg,#50026f,#0c0000);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 8px;
+}
+
+.headeremp h1 {
+    margin: 0;
+    font-size: 2.5em;
+    
+}
+
+.employee-info, .tasks-info, .performance-info {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.employee-info h2, .tasks-info h2, .performance-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    color: #c70000;
+}
+
+.employee-role {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.task-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.task-stat {
+    text-align: center;
+}
+
+.task-completed {
+    font-size: 2em;
+    color: #4caf50;
+}
+
+.task-count {
+    font-size: 2em;
+    color: #f44336;
+}
+
+.task-label {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+
+.performance-bar {
+    background-color: #333;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    height: 20px;
+    margin: 0 auto 10px;
+}
+
+.performance-progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.performance-info p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
